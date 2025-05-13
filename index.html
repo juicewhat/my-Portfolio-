@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#trainings">Trainings/Seminars</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Job Experience</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="profile">
+    <div class="profile-container">
+      <img src="Profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h2 class="profile-name">Joshua P. Auza</h2>
+      <p class="profile-bio">A passionate web developer with a love for clean design and smooth user experiences.</p>
+      <ul class="profile-info">
+        <li>Email: juicewahh@gmail.com</li>
+        <li>Phone: 0963210746</li>
+        <li>Location: Tabok, Mandaue City, Cebu Philippines</li>
+      </ul>
+      <div class="profile-socials">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="https://www.facebook.com/juicewa.uza" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Diploma in Computer Engineering</h3>
+      <p><strong>Center for Industrial Technology and Enterprises</strong></p>
+      <p>Expected Graduation: 2026</p>
+      <p>Relevant Coursework: Data Structures, Web Development, Graphic Designing, Animation, Networking</p>
+    </div>
+
+    <div class="education-item">
+      <h3>Senior High School</h3>
+      <p><strong>Aclc College of Mandaue</strong></p>
+      <p>Graduated: 2024</p>
+      <p>Strand: ICT-PROGRAMMING</p>
+    </div>
+  </section>
+
+  <section id="trainings">
+    <h2>Trainings & Seminars</h2>
+    <div class="training-item">
+      <h3>Web Development</h3>
+      <p><strong>Programming Club</strong> — Aclc College of Mandaue</p>
+      <p>Date: August 2023</p>
+      <p>Topics: HTML, CSS, JavaScript</p>
+      </div>
+      <div class="training-item">
+        <h3>Computer Engineering</h3>
+      <p><strong>Dual Training System</strong> CITE</p>
+      <p>Date: February 2025</p>
+      <p>Topics: Trouble Shooting, Computer Services</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Airline Reservation System</h3>
+      <p>
+        A web-based application that allows users to search flights, book tickets, and manage reservations.
+        The system includes features for user registration, seat selection, payment processing, and admin control over flight schedules and passenger data.
+      </p>
+      <a href="AirlineReservationApp.java" download class="download-link">Download Project Details</a>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Job Experience</h2>
+    <div class="job-item">
+      <h3>Quality Assurance - IT Department</h3>
+      <p><strong>Autoliv</strong> — Cebu City, Philippines</p>
+      <p>February 2024 – Present</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> juicewahh@gmail.com</p>
+      <p><strong>Phone:</strong> +639632107646</p>
+      <p><strong>Location:</strong> Mandaue City, Cebu, Philippines</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p>Details about the project go here.</p>
+    </div>
+  </div>
+
+  <script src="main.js.js"></script>
+</body>
+</html>

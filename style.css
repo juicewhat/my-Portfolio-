@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #1e2e20;
+  color: #e6f0e8;
+}
+
+nav {
+  background: #3c693f;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: #e6f0e8;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c2f0c2;
+}
+
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #2e4931;
+}
+
+#profile {
+  background-color: #2b4430;
+  text-align: center;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3c693f;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+  font-size: 2rem;
+  color: #a8ddb5;
+  margin: 10px 0;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  color: #c4dcc8;
+  margin-bottom: 15px;
+}
+
+.profile-info {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.profile-info li {
+  margin: 6px 0;
+}
+
+.profile-socials a {
+  margin: 0 10px;
+  color: #a8ddb5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.profile-socials a:hover {
+  color: #d0f0d0;
+}
+
+section#education,
+section#trainings,
+section#experience,
+section#contact {
+  background-color: #263b2e;
+}
+
+section#education h2,
+section#trainings h2,
+section#projects h2,
+section#experience h2,
+section#contact h2 {
+  text-align: center;
+  color: #a8ddb5;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.education-item,
+.training-item,
+.job-item {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background-color: #344d3a;
+  border-left: 5px solid #3c693f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.education-item h3,
+.training-item h3,
+.job-item h3 {
+  margin-top: 0;
+  color: #f1fff5;
+}
+
+.education-item p,
+.training-item p,
+.job-item p {
+  margin: 5px 0;
+  color: #d0e8d2;
+}
+
+section#projects {
+  background-color: #2e4433;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a8ddb5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  color: #d0f0d0;
+  text-decoration: underline;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #cfe7d3;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #4a6e52;
+  background-color: #1d2e23;
+  color: #dfffe5;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #3c693f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #2f5031;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(60, 105, 63, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #2f4733;
+  margin: 15% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #e1f7e4;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #a8ddb5;
+}
+
+.more-text {
+  display: none;
+}
+
+.more-text.show {
+  display: inline;
+}
+
+.read-more {
+  background-color: transparent;
+  border: none;
+  color: #a8ddb5;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  .modal-content {
+    margin: 30% auto;
+    width: 95%;
+  }
+}
+section {
+  background-color: #2a4d2d;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 50px 20px;
+  padding: 40px 25px;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+section.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
