@@ -143,3 +143,10 @@ revealSections.forEach(section => {
   section.classList.add("hidden");
   observer.observe(section);
 });
+document.querySelectorAll(".read-more").forEach(button => {
+  button.addEventListener("click", () => {
+    const moreText = button.previousElementSibling.querySelector(".more-text");
+    moreText.classList.toggle("show");
+    button.textContent = moreText.classList.contains("show") ? "Read Less" : "Read More";
+  });
+});
