@@ -128,7 +128,6 @@ document.querySelectorAll(".read-more").forEach(button => {
   });
 });
 
-// Section reveal effect
 const revealSections = document.querySelectorAll("section");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
