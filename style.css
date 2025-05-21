@@ -300,3 +300,9 @@ section.reveal {
   opacity: 1;
   transform: translateY(0);
 }
+.more-text {
+  display: none;
+}
+.more-text.show {
+  display: inline;
+}
