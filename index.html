@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* You can move this to your CSS file */
+    .hidden { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal { opacity: 1; transform: translateY(0); }
+    .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.5); }
+    .modal-content { background: #fff; margin: 15% auto; padding: 20px; width: 80%; max-width: 400px; position: relative; border-radius: 10px; }
+    .close { position: absolute; top: 10px; right: 20px; font-size: 24px; cursor: pointer; }
+    .show { display: inline; }
+    .read-more { cursor: pointer; color: blue; text-decoration: underline; }
+  </style>
 </head>
 <body>
   <nav>
@@ -60,9 +70,9 @@
       <p><strong>Programming Club</strong> — Aclc College of Mandaue</p>
       <p>Date: August 2023</p>
       <p>Topics: HTML, CSS, JavaScript</p>
-      </div>
-      <div class="training-item">
-        <h3>Computer Engineering</h3>
+    </div>
+    <div class="training-item">
+      <h3>Computer Engineering</h3>
       <p><strong>Dual Training System</strong> CITE</p>
       <p>Date: February 2025</p>
       <p>Topics: Trouble Shooting, Computer Services</p>
@@ -79,6 +89,7 @@
       </p>
       <a href="AirlineReservationApp.java" download class="download-link">Download Project Details</a>
     </div>
+    <button id="openModal">Open Modal</button>
   </section>
 
   <section id="experience">
@@ -97,10 +108,10 @@
       <p><strong>Phone:</strong> +639632107646</p>
       <p><strong>Location:</strong> Mandaue City, Cebu, Philippines</p>
     </div>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -112,6 +123,6 @@
     </div>
   </div>
 
-  <script src="main.js.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
